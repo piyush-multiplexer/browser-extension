@@ -1,0 +1,21 @@
+{
+    "description": "VueJS1 custom background particle",
+    "manifest_version": 2,
+    "name": "Vue Custom Background Particle",
+    "version": "1.0.0",
+    "icons": {
+        "48": "assets/img/logo.png"
+    },
+    "background": {
+        "scripts": ["chrome/background.js"],
+        "persistent": false
+    },
+    "chrome_url_overrides": {
+        "newtab": "chrome/index.html"
+    },
+    "page_action": {
+        "default_icon": "assets/img/logo.png",
+        "default_title": "Opens MyExtension"
+    },
+    "permissions": ["management","activeTab","declarativeContent","storage"]
+}

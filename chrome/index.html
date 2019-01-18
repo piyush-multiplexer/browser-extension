@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vue Custom Particle</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../assets/css/styles.css"/>
+    <script src="../assets/js/bootstrap.js"></script>
+</head>
+<body>
+<div id="app">
+    <div id="particles-js"></div>
+
+    <div class="container" style="position: relative">
+        <script src="../assets/js/particles.js"></script>
+        <div class="text-center">
+            <h1 class="p-2">Custom Background Particle</h1>
+            <input type="color" id="color" v-model="color">
+            <button class="btn btn-outline-light" @click="getData">Submit</button>
+            <div id="message"></div>
+        </div>
+        <p class="text-left" style="bottom: 0;right: 3%; position: fixed">Made by Piyush Goyani </p>
+        <p class="text-right" style="bottom: 0;left:3%;position: fixed">Powered by VueJS</p>
+
+    </div>
+</div>
+<script src="../assets/js/vue.js"></script>
+<script src="index.js"></script>
+<script src="../assets/js/animate.js"></script>
+
+</body>
+</html>

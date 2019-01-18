@@ -1,0 +1,19 @@
+{
+    "description": "Build an Extension!",
+    "manifest_version": 2,
+    "name": "Vue Chrome Extension",
+    "version": "1.0.0",
+    "icons": {
+        "48": "assets/img/logo.png"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "page_action": {
+        "default_icon": "assets/img/logo.png",
+        "default_title": "Opens MyExtension",
+        "default_popup": "chrome/popup.html"
+    },
+    "permissions": ["activeTab","declarativeContent","storage"]
+}
