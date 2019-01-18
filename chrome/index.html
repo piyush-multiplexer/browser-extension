@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="../assets/css/styles.css"/>
     <script src="../assets/js/bootstrap.js"></script>
+
 </head>
 <body>
 <div id="app">
@@ -18,6 +19,14 @@
         <div class="text-center">
             <h1 class="p-2">Custom Background Particle</h1>
             <input type="color" id="color" v-model="color">
+            <select v-model="clickEffect">
+                <option value="" disabled selected>Click Effect</option>
+                <option v-for="o in effects">{{o}}</option>
+            </select>
+            <select v-model="hoverEffect">
+                <option value="" disabled selected>Hover Effect</option>
+                <option v-for="o in effects">{{o}}</option>
+            </select>
             <button class="btn btn-outline-light" @click="getData">Submit</button>
             <div id="message"></div>
         </div>
@@ -27,8 +36,8 @@
     </div>
 </div>
 <script src="../assets/js/vue.js"></script>
-<script src="index.js"></script>
-<script src="../assets/js/animate.js"></script>
+<script  type="module" src="index.mjs"></script>
+<script type="module" src="../assets/js/animate.mjs"></script>
 
 </body>
 </html>

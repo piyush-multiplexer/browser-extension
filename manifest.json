@@ -2,7 +2,7 @@
     "description": "VueJS1 custom background particle",
     "manifest_version": 2,
     "name": "Vue Custom Background Particle",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "icons": {
         "48": "assets/img/logo.png"
     },
